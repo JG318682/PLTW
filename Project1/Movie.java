@@ -1,13 +1,12 @@
-public class Song
+public class Movie
 {
        private int rating;
        private String title; 
 
-    public Song()
+    public Movie()
     {  
         title = "";
     }
-    
     
     public String getTitle() 
     {
