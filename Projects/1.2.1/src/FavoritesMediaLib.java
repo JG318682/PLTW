@@ -28,9 +28,6 @@ public class FavoritesMediaLib
                 System.out.println(titleofSong + rating);
 
             }
-
-            songInfo = songInfo.substring(index + 1);
-            index = songInfo.indexOf("|");
         }
     }
 
