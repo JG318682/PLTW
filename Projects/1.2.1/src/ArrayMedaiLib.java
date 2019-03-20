@@ -13,6 +13,7 @@ public class ArrayMedaiLib {
         for (int val : daysBetweenPurchase) {
             total = total + val;
         }
+
         //Complete math on your own
 
         //Part IV
@@ -33,18 +34,27 @@ public class ArrayMedaiLib {
             System.out.println(s.getTitle());
         }
 
-        int count = 0;
-        for (Song s : topTenSongs){
-            if(count % 3 == 0){
-                s.setPrice(.99);
-                System.out.println(s.getTitle() + " Price: " + s.getPrice());
-            }
-            else{
-                s.setPrice(1.29);
-                System.out.println(s.getTitle() + " Price: " + s.getPrice());
-            }
-            count++;
-        }
+        int index = SongFinder.findTitle(topTenSongs, "Mack the Knife");
 
+        if (index >= 0) {
+            System.out.println("Found " + topTenSongs[index].getTitle());
+        } else {
+            System.out.println("Song not found!");
+        }
     }
+
+    int count = 0;
+    for (Song s : topTenSongs){
+        if(count % 3 == 0){
+            s.setPrice(.99);
+            System.out.println(s.getTitle() + " Price: " + s.getPrice());
+        }
+        else{
+            s.setPrice(1.29);
+            System.out.println(s.getTitle() + " Price: " + s.getPrice());
+        }
+        count++;
+    }
+
 }
+

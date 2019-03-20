@@ -126,8 +126,7 @@ public class MediaLib
         System.out.println("Average rating: " + aveRating);
         
         
-//hours = movie1.getMinutes() / 60;
-//minutes = movie1.getMinutes() % 60;
+
         
         System.out.println("Number of books: ");
         System.out.println(numBooks);
