@@ -41,20 +41,28 @@ public class ArrayMedaiLib {
         } else {
             System.out.println("Song not found!");
         }
-    }
 
-    int count = 0;
-    for (Song s : topTenSongs){
-        if(count % 3 == 0){
-            s.setPrice(.99);
-            System.out.println(s.getTitle() + " Price: " + s.getPrice());
-        }
-        else{
-            s.setPrice(1.29);
-            System.out.println(s.getTitle() + " Price: " + s.getPrice());
-        }
-        count++;
-    }
+//        change the array
+//        System.out.println("-BEFORE--");
+//        for (Song changeSong : topTenSongs) {
+//            changeSong.setTitle("test");
+//        }
+//        show the array
+//        System.out.println("-AFTER--");
+//        for (Song showSong : topTenSongs) {
+//            System.out.println(showSong.getTitle());
+//        }
 
+        int count = 0;
+        for (Song s : topTenSongs) {
+            if (count % 3 == 0) {
+                s.setPrice(.99);
+                System.out.println(s.getTitle() + " Price: " + s.getPrice());
+            } else {
+                s.setPrice(1.29);
+                System.out.println(s.getTitle() + " Price: " + s.getPrice());
+            }
+            count++;
+        }
+    }
 }
-
