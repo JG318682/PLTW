@@ -10,7 +10,7 @@ public class FindRent {
                         {1000, 1250, 1600},
                         {2000, 2250, 2500},
                         {4250, 4500, 5000}};
-       String entry;
+        String entry;
         int floor;
         int bedrooms;
 
